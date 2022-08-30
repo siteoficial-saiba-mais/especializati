@@ -54,8 +54,9 @@
         }
 
         .img-bottle img {
-            height: 15em;
+            height: 13em;
             width: auto;
+            display: none;
         }
 
         .img-guarantee img {
@@ -136,6 +137,13 @@
             width: 18em;
         }
 
+        @media only screen and (min-width: 800px) {
+            .img-bottle img {
+                display: block;
+                height: 19em;
+                width: auto;
+            }
+        }
         /* Extra small devices (phones, 600px and down) */
         /* Extra large devices (large laptops and desktops, 1200px and up) */
         @media only screen and (min-width: 1200px) {
@@ -144,6 +152,7 @@
             }
 
             .img-bottle img {
+                display: block;
                 height: 30em;
                 width: auto;
             }
@@ -209,7 +218,7 @@
 
     <div class="container-fluid" style="margin-top: 110px;">
         <div class="row text-center px-5">
-            <div class="col col-xs-12 my-auto">
+            <div class="col-xs-12 col-lg-4 my-auto">
                 <h1>Epecializati</h1>
                 <h2 class="text-center text-primary-color mt-5">FORMAÇÃO DE LARAVEL (LaraFood + VueFood + FlutterFood)</h2>
                 <p class="text-center mt-3 lead">Domine a melhor stack do mercado: Laravel + Vue + Flutter, formação completa.</p>
@@ -219,7 +228,7 @@
                         </a>
                     </div>
             </div>
-            <div class="col col-xs-12 img-bottle">
+            <div class="col-xs-12 col-lg-8 img-bottle my-auto">
                 <img src="./imagem.png" alt="Logo Curso Como Superar Mães Narcisistas">
                 <!-- <p>Domine a melhor stack do mercado: Laravel + Vue + Flutter, formação completa.</p> -->
             </div>  
